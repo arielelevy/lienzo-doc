@@ -4,13 +4,15 @@
 
 # Lienzo
 
-[![Licencia propietaria](https://img.shields.io/badge/Licencia-Propietaria-64748b)](LICENSE)
-![Versión 0.6.20](https://img.shields.io/badge/Versi%C3%B3n-0.6.20-10a37f)
-![Claude Code](https://img.shields.io/badge/Claude_Code-d97757)
-![Codex](https://img.shields.io/badge/Codex-10a37f)
-![coda](https://img.shields.io/badge/coda-5b9cff)
-![Pi](https://img.shields.io/badge/Pi-64748b)
-![Kiro](https://img.shields.io/badge/Kiro-8b5cf6)
+<p align="center">
+  <a href="LICENSE"><img alt="Licencia propietaria" src="https://img.shields.io/badge/Licencia-Propietaria-64748b"></a>
+  <img alt="Versi&#243;n 0.6.20" src="https://img.shields.io/badge/Versi%C3%B3n-0.6.20-10a37f">
+  <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-d97757">
+  <img alt="Codex" src="https://img.shields.io/badge/Codex-10a37f">
+  <img alt="coda" src="https://img.shields.io/badge/coda-5b9cff">
+  <img alt="Pi" src="https://img.shields.io/badge/Pi-64748b">
+  <img alt="Kiro" src="https://img.shields.io/badge/Kiro-8b5cf6">
+</p>
 
 **Una fábrica de software con agentes.**
 
