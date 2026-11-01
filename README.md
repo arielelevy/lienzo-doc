@@ -1,11 +1,28 @@
+<p align="center">
+  <img src="assets/logo.svg" width="96" height="96" alt="Logo de Lienzo: tarjetas conectadas por una flecha">
+</p>
+
 # Lienzo
 
-Lienzo es una fábrica de software con agentes. Una coordinadora reparte trabajo entre sesiones
-de Claude Code, Codex, coda y otros agentes, recibe sus informes y verifica lo producido. Las
-sesiones pueden correr en una PC o repartirse entre hasta 4 PCs emparejadas de la misma LAN.
-El tablero permite intervenir; el método organiza cómo se construye, se revisa y se aprende.
+[![Licencia propietaria](https://img.shields.io/badge/Licencia-Propietaria-64748b)](LICENSE)
+![Versión 0.6.20](https://img.shields.io/badge/Versi%C3%B3n-0.6.20-10a37f)
+![Claude Code](https://img.shields.io/badge/Claude_Code-d97757)
+![Codex](https://img.shields.io/badge/Codex-10a37f)
+![coda](https://img.shields.io/badge/coda-5b9cff)
+![Pi](https://img.shields.io/badge/Pi-64748b)
+![Kiro](https://img.shields.io/badge/Kiro-8b5cf6)
 
-**Versión 0.6.19.** Novedades, validación y límites.
+**Una fábrica de software con agentes.**
+
+Convertí un objetivo en trabajo coordinado entre Claude Code, Codex, coda y otros agentes.
+Una coordinadora reparte los encargos, recibe los informes y verifica lo producido.
+Vos seguís el trabajo desde un tablero e intervenís cuando hace falta.
+
+Las sesiones pueden correr en una PC o repartirse entre hasta 4 PCs emparejadas de la misma LAN.
+El método conecta construcción, revisión y aprendizaje: cada ronda deja decisiones y evidencia
+que sirven para la siguiente.
+
+**Versión 0.6.20.**
 
 ## Una fábrica de software
 
@@ -136,9 +153,7 @@ Aprendizaje y el contrato de memoria.
 
 ![Briefing de un proyecto de ejemplo: decisiones vigentes, preguntas abiertas e informes con su respaldo](assets/memoria-proyecto.png)
 
-[Arquitectura, diseño y recorridos de los pedidos](https://arquitectura-lienzo.ariel-e-levy.chatgpt.site/) ·
-Pendientes y evidencia · Historial de mejoras ·
-Documentación y decisiones de producto
+[Arquitectura, diseño y recorridos de los pedidos](https://arquitectura-lienzo.ariel-e-levy.chatgpt.site/)
 
 ![Tablero con sesiones inventadas, dos PCs, conexiones, una pregunta y un permiso pendiente](assets/tablero.png)
 
@@ -148,3 +163,10 @@ Documentación y decisiones de producto
 Este repositorio contiene documentación y recursos visuales. Descargarlo no instala Lienzo. Para consultar por acceso a la aplicación o una demostración, contactá a [Ariel Levy](https://github.com/arielelevy).
 
 - [Copiar archivos entre PCs](docs/copias-entre-pcs.md)
+
+## Licencia
+
+Software, documentación y recursos visuales propios: **licencia propietaria, todos los derechos
+reservados**. Su publicación no autoriza el uso, la modificación ni la redistribución.
+Consultá [LICENSE](LICENSE) para las condiciones y el contacto. Los componentes y materiales
+de terceros conservan sus licencias.
