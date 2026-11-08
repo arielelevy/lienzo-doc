@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img alt="Licencia propietaria" src="https://img.shields.io/badge/Licencia-Propietaria-64748b"></a>
-  <img alt="Versi&#243;n 0.6.20" src="https://img.shields.io/badge/Versi%C3%B3n-0.6.20-10a37f">
+  <img alt="Versi&#243;n 0.16.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.16.0-10a37f">
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-d97757">
   <img alt="Codex" src="https://img.shields.io/badge/Codex-10a37f">
   <img alt="coda" src="https://img.shields.io/badge/coda-5b9cff">
@@ -24,7 +24,7 @@ Las sesiones pueden correr en una PC o repartirse entre hasta 4 PCs emparejadas 
 El método conecta construcción, revisión y aprendizaje: cada ronda deja decisiones y evidencia
 que sirven para la siguiente.
 
-**Versión 0.6.20.**
+**Versión 0.16.0.**
 
 ## Una fábrica de software
 
@@ -45,6 +45,23 @@ Chrome de otra PC. Cada PC sigue siendo dueña de sus procesos, sus permisos y s
 
 Corre en `127.0.0.1:7321`. Lee el historial de cada agente y escribe en su terminal.
 Las terminales y las transcripciones siguen a cargo de los agentes.
+
+## Factory: objetivos, olas y frentes
+
+Factory es donde Lienzo ejecuta la coordinación sola. Se organiza como **Proyecto → Objetivo → Ola**: un objetivo
+es lo que querés lograr y se entrega en olas cortas, cada una con uno o varios frentes en paralelo.
+
+![Progreso de un objetivo en Factory: la cadena de olas con las cajas de release (violeta) y producción (ámbar) en su lugar, las primeras olas aceptadas y verificadas y las siguientes pendientes](assets/factory-avance.png)
+
+- **Del texto a las olas.** Pegás el pedido; la IA lo corrige, lo enriquece y propone las olas. Le podés dar
+  instrucciones («separalo en tres objetivos») e iterar la propuesta en un chat antes de aceptarla.
+- **Con play, Factory trabaja.** Redacta el encargo de cada ola, lo reparte entre agentes (Claude Code, Kiro y
+  otros), observa la entrega, la verifica con evidencia y, al aceptarla, commitea. Con «Release al final» publica la
+  versión y registra el pasaje a producción.
+- **Cuando algo falla.** «Reintentar» elige la acción segura (relanzar con un agente nuevo, reverificar o acreditar la
+  entrega hecha por otro frente) y dice qué hizo.
+- **Decidís vos.** Aceptar cada ola y cerrar el objetivo son decisiones explícitas; las preguntas llegan a una sola
+  bandeja.
 
 ## La coordinación como metodología
 
