@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img alt="Licencia propietaria" src="https://img.shields.io/badge/Licencia-Propietaria-64748b"></a>
-  <img alt="Versi&#243;n 0.23.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.23.0-10a37f">
+  <img alt="Versi&#243;n 0.24.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.24.0-10a37f">
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-d97757">
   <img alt="Codex" src="https://img.shields.io/badge/Codex-10a37f">
   <img alt="coda" src="https://img.shields.io/badge/coda-5b9cff">
@@ -24,7 +24,7 @@ Las sesiones pueden correr en una PC o repartirse entre hasta 4 PCs emparejadas 
 El método conecta construcción, revisión y aprendizaje: cada ronda deja decisiones y evidencia
 que sirven para la siguiente.
 
-**Versión 0.23.0.**
+**Versión 0.24.0.**
 
 ## Una fábrica de software
 
@@ -59,7 +59,12 @@ es lo que querés lograr y se entrega en olas cortas, cada una con uno o varios 
   otros), observa la entrega, la verifica con evidencia y, al aceptarla, commitea. Con «Release al final» publica la
   versión y registra el pasaje a producción.
 - **Cuando algo falla.** «Reintentar» elige la acción segura (relanzar con un agente nuevo, reverificar o acreditar la
-  entrega hecha por otro frente) y dice qué hizo.
+  entrega hecha por otro frente) y dice qué hizo. Una entrega cuenta aunque el frente haya recibido otro mensaje o ya
+  esté en otra tarea, y cada resultado del cierre (commit, push, publicación y reinicio) le llega a la coordinadora
+  como aviso, con el próximo paso si falló.
+- **Factory sugiere, la coordinadora decide.** El reparto de una ola (cuántos frentes y quién espera a quién) es una
+  sugerencia con su motivo, que la coordinadora puede cambiar. Cada encargo tiene un tipo de entrega: ejecución
+  (con pruebas), documental o investigación, y un modo de investigación acepta resultados negativos con evidencia.
 - **Decidís vos.** Aceptar cada ola y cerrar el objetivo son decisiones explícitas; las preguntas llegan a una sola
   bandeja.
 - **Con herramientas MCP.** Lienzo trae su propio servidor MCP local: Claude Code, Kiro y Codex consultan objetivos,
