@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img alt="Licencia propietaria" src="https://img.shields.io/badge/Licencia-Propietaria-64748b"></a>
-  <img alt="Versi&#243;n 0.22.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.22.0-10a37f">
+  <img alt="Versi&#243;n 0.23.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.23.0-10a37f">
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-d97757">
   <img alt="Codex" src="https://img.shields.io/badge/Codex-10a37f">
   <img alt="coda" src="https://img.shields.io/badge/coda-5b9cff">
@@ -24,7 +24,7 @@ Las sesiones pueden correr en una PC o repartirse entre hasta 4 PCs emparejadas 
 El método conecta construcción, revisión y aprendizaje: cada ronda deja decisiones y evidencia
 que sirven para la siguiente.
 
-**Versión 0.22.0.**
+**Versión 0.23.0.**
 
 ## Una fábrica de software
 
@@ -66,10 +66,11 @@ es lo que querés lograr y se entrega en olas cortas, cada una con uno o varios 
   olas y tarjetas, lanzan y cierran frentes, piden QA y leen informes con herramientas, sin aprender la API. Aceptar,
   rechazar o responder una decisión sólo se ejecuta con tu confirmación explícita, y el servidor nunca sale de tu PC.
   Las consultas devuelven un resumen breve por defecto y el detalle completo cuando el agente lo pide.
-- **Con el goal nativo de cada agente** *(en desarrollo, próxima versión)*. La coordinadora lleva como goal de su
-  propio harness el objetivo y la ola vigentes, y Factory lo realinea al cambiar de ola. Sólo toca un goal que
-  puso Factory y lo comprueba releyendo el agente: un goal que fijaste vos se conserva. Cada agente muestra qué
-  puede hacer con su goal y, si todavía no se puede administrar, por qué.
+- **Con el goal nativo de cada agente.** La coordinadora lleva como goal de su propio harness el objetivo y la ola
+  vigentes, y Factory lo realinea al cambiar de ola. Sólo toca un goal que puso Factory y lo comprueba releyendo el
+  agente: un goal que fijaste vos se conserva. Antes de fijarlo, frena si la cuenta está sin cuota, y al reanudar
+  una sesión no lo duplica. Cada agente muestra qué puede hacer con su goal, sus comandos `/` y, si todavía no se
+  puede administrar, por qué.
 
 ## La coordinación como metodología
 
