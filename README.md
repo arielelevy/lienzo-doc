@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img alt="Licencia propietaria" src="https://img.shields.io/badge/Licencia-Propietaria-64748b"></a>
-  <img alt="Versi&#243;n 0.16.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.16.0-10a37f">
+  <img alt="Versi&#243;n 0.22.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.22.0-10a37f">
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-d97757">
   <img alt="Codex" src="https://img.shields.io/badge/Codex-10a37f">
   <img alt="coda" src="https://img.shields.io/badge/coda-5b9cff">
@@ -24,7 +24,7 @@ Las sesiones pueden correr en una PC o repartirse entre hasta 4 PCs emparejadas 
 El método conecta construcción, revisión y aprendizaje: cada ronda deja decisiones y evidencia
 que sirven para la siguiente.
 
-**Versión 0.16.0.**
+**Versión 0.22.0.**
 
 ## Una fábrica de software
 
@@ -62,6 +62,9 @@ es lo que querés lograr y se entrega en olas cortas, cada una con uno o varios 
   entrega hecha por otro frente) y dice qué hizo.
 - **Decidís vos.** Aceptar cada ola y cerrar el objetivo son decisiones explícitas; las preguntas llegan a una sola
   bandeja.
+- **Con herramientas MCP.** Lienzo trae su propio servidor MCP local: Claude Code, Kiro y Codex consultan objetivos,
+  olas y tarjetas, lanzan y cierran frentes, piden QA y leen informes con herramientas, sin aprender la API. Aceptar,
+  rechazar o responder una decisión sólo se ejecuta con tu confirmación explícita, y el servidor nunca sale de tu PC.
 
 ## La coordinación como metodología
 
