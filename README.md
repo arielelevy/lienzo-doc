@@ -65,6 +65,11 @@ es lo que querés lograr y se entrega en olas cortas, cada una con uno o varios 
 - **Con herramientas MCP.** Lienzo trae su propio servidor MCP local: Claude Code, Kiro y Codex consultan objetivos,
   olas y tarjetas, lanzan y cierran frentes, piden QA y leen informes con herramientas, sin aprender la API. Aceptar,
   rechazar o responder una decisión sólo se ejecuta con tu confirmación explícita, y el servidor nunca sale de tu PC.
+  Las consultas devuelven un resumen breve por defecto y el detalle completo cuando el agente lo pide.
+- **Con el goal nativo de cada agente** *(en desarrollo, próxima versión)*. La coordinadora lleva como goal de su
+  propio harness el objetivo y la ola vigentes, y Factory lo realinea al cambiar de ola. Sólo toca un goal que
+  puso Factory y lo comprueba releyendo el agente: un goal que fijaste vos se conserva. Cada agente muestra qué
+  puede hacer con su goal y, si todavía no se puede administrar, por qué.
 
 ## La coordinación como metodología
 
@@ -101,6 +106,7 @@ y sus capacidades; la cobertura depende de la integración de cada uno.
 | Cuotas y recursos | Consultar margen de uso, memoria y disponibilidad antes de abrir más frentes o investigar en segundo plano. |
 | Mejoras de agentes | Aplicar las integraciones habilitadas al lanzar y mostrar su disponibilidad, costo y límites. |
 | Contexto y controles | Llevar aprendizajes vigentes a las sesiones y frenar patrones concretos de comandos cuando hay un control activo. |
+| Capacidades por agente | Un mapa común de lo que cada harness permite en cada canal, separando lo documentado, lo observado y lo integrado. |
 
 Al arrancar el servidor, Lienzo comprueba y aplica las actualizaciones de los harness instalados
 (Claude Code, Codex, Pi, CODA y Kiro), usando sus comandos propios. Repite la comprobación cada
