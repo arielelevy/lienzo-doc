@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img alt="Licencia propietaria" src="https://img.shields.io/badge/Licencia-Propietaria-64748b"></a>
-  <img alt="Versi&#243;n 0.25.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.25.0-10a37f">
+  <img alt="Versi&#243;n 0.27.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.27.0-10a37f">
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-d97757">
   <img alt="Codex" src="https://img.shields.io/badge/Codex-10a37f">
   <img alt="coda" src="https://img.shields.io/badge/coda-5b9cff">
@@ -24,7 +24,7 @@ Las sesiones pueden correr en una PC o repartirse entre hasta 4 PCs emparejadas 
 El método conecta construcción, revisión y aprendizaje: cada ronda deja decisiones y evidencia
 que sirven para la siguiente.
 
-**Versión 0.25.0.** La web carga la mitad de código al abrir y pasa de una vista a otra sin recargar la página.
+**Versión 0.27.0.** Coordinación robusta con servidor MCP local integrado, soporte de goals nativos, persistencia SQLite de alta concurrencia y conciliación automática de frentes.
 
 ## Una fábrica de software
 
@@ -111,7 +111,7 @@ ronda siguiente puede recuperar tanto una decisión como las razones y pruebas q
 ## El meta-harness
 
 El harness de cada agente administra su conversación, herramientas y ejecución. Lienzo envuelve
-esos harness con una capa común de coordinación. Claude Code, Codex y coda conservan su identidad
+esos harness con una capa común de coordinación. Claude Code, Codex, Kiro, Pi y coda conservan su identidad
 y sus capacidades; la cobertura depende de la integración de cada uno.
 
 | Capa de Lienzo | Qué aporta al trabajo |
