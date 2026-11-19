@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img alt="Licencia propietaria" src="https://img.shields.io/badge/Licencia-Propietaria-64748b"></a>
-  <img alt="Versi&#243;n 0.27.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.27.0-10a37f">
+  <img alt="Versi&#243;n 0.32.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.32.0-10a37f">
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-d97757">
   <img alt="Codex" src="https://img.shields.io/badge/Codex-10a37f">
   <img alt="coda" src="https://img.shields.io/badge/coda-5b9cff">
@@ -24,7 +24,7 @@ Las sesiones pueden correr en una PC o repartirse entre hasta 4 PCs emparejadas 
 El método conecta construcción, revisión y aprendizaje: cada ronda deja decisiones y evidencia
 que sirven para la siguiente.
 
-**Versión 0.27.0.** Coordinación robusta con servidor MCP local integrado, soporte de goals nativos, persistencia SQLite de alta concurrencia y conciliación automática de frentes.
+**Versión 0.32.0.** Factory ágil de punta a punta: cierre de olas sin esperas, encargos y arranques más livianos, modo auto con una supervisora y estados que dicen quién destraba cada bloqueo.
 
 ## Una fábrica de software
 
@@ -74,6 +74,16 @@ es lo que querés lograr y se entrega en olas cortas, cada una con uno o varios 
 - **Estado en una base local.** Los objetivos y sus olas viven en una base SQLite local: cada cambio escribe sólo lo
   que cambió y las lecturas no esperan a quien escribe, así que «Estado del trabajo» contesta en menos de un segundo
   con el servidor ocupado.
+- **Cierre sin esperas.** La ola se commitea apenas sus entregas quedan verificadas, por huellas y sin repetir
+  pruebas; push y publicación salen al aceptarla. La ola siguiente arranca recién con ese commit hecho, y lo rutinario
+  (acusar informes ya commiteados, cerrar frentes libres) se resuelve solo.
+- **Encargos y arranques livianos.** El encargo de cada frente va corto y orientado al resultado, el arranque de sesión
+  pesa un tercio menos y el skill de Lienzo se recortó cerca de un tercio. Cada rol corre con su modelo: frentes en un
+  modelo rápido y QA en uno más capaz.
+- **Estados que dicen quién y desde cuándo.** Todo «Bloqueado» nombra quién lo destraba (vos, la coordinadora o
+  Factory) y desde cuándo; una ola de un objetivo cerrado se ve cerrada con él.
+- **Modo auto.** Con «Auto», una sesión supervisora gestionada por el servidor responde por vos lo rutinario de Factory
+  dentro de límites escritos, y lo que de verdad es tuyo llega a la bandeja.
 - **Decidís vos.** Aceptar cada ola y cerrar el objetivo son decisiones explícitas; las preguntas llegan a una sola
   bandeja.
 - **Con herramientas MCP.** Lienzo trae su propio servidor MCP local: Claude Code, Kiro y Codex consultan objetivos,
