@@ -6,7 +6,7 @@
 
 <p align="center">
   <a href="LICENSE"><img alt="Licencia propietaria" src="https://img.shields.io/badge/Licencia-Propietaria-64748b"></a>
-  <img alt="Versi&#243;n 0.32.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.32.0-10a37f">
+  <img alt="Versi&#243;n 0.35.0" src="https://img.shields.io/badge/Versi%C3%B3n-0.35.0-10a37f">
   <img alt="Claude Code" src="https://img.shields.io/badge/Claude_Code-d97757">
   <img alt="Codex" src="https://img.shields.io/badge/Codex-10a37f">
   <img alt="coda" src="https://img.shields.io/badge/coda-5b9cff">
@@ -24,7 +24,7 @@ Las sesiones pueden correr en una PC o repartirse entre hasta 4 PCs emparejadas 
 El método conecta construcción, revisión y aprendizaje: cada ronda deja decisiones y evidencia
 que sirven para la siguiente.
 
-**Versión 0.32.0.** Factory ágil de punta a punta: cierre de olas sin esperas, encargos y arranques más livianos, modo auto con una supervisora y estados que dicen quién destraba cada bloqueo.
+**Versión 0.35.0.** Factory desde el celular: cada objetivo con sus acciones en la app, avisos de disco y memoria con limpieza, y entregas hechas por fuera que Factory verifica sin lanzar otro frente.
 
 ## Una fábrica de software
 
@@ -90,6 +90,11 @@ es lo que querés lograr y se entrega en olas cortas, cada una con uno o varios 
   olas y tarjetas, lanzan y cierran frentes, piden QA y leen informes con herramientas, sin aprender la API. Aceptar,
   rechazar o responder una decisión sólo se ejecuta con tu confirmación explícita, y el servidor nunca sale de tu PC.
   Las consultas devuelven un resumen breve por defecto y el detalle completo cuando el agente lo pide.
+- **Desde el celular.** La [app Android](#app-android) muestra cada objetivo con sus olas y sus acciones: responder
+  decisiones, prender o apagar el release, aprobar un push y cerrar el objetivo, con la firma del teléfono emparejado.
+  Un objetivo que prohíbe el push no lo ofrece.
+- **Entregas hechas por fuera.** Si los commits ya existen, se declaran como entrega adelantada: Factory los verifica
+  y acepta la ola sin lanzar otro frente.
 - **Con el goal nativo de cada agente.** La coordinadora lleva como goal de su propio harness el objetivo y la ola
   vigentes, y Factory lo realinea al cambiar de ola. Sólo toca un goal que puso Factory y lo comprueba releyendo el
   agente: un goal que fijaste vos se conserva. Antes de fijarlo, frena si la cuenta está sin cuota, y al reanudar
@@ -215,10 +220,27 @@ Aprendizaje y el contrato de memoria.
 
 ### App Android
 
-La app Android, en desarrollo, se empareja por QR. En Situación podés desplegar los objetivos y sus etapas y
-consultar las cuotas de los agentes. La Bandeja permite elegir quién responde las decisiones. En el chat podés
-dictar, responder con cita y adjuntar fotos o videos. Mantené apretado un objetivo para iniciar una consulta
-con su referencia.
+La app Android, en desarrollo, se empareja por QR y lleva la fábrica al bolsillo: seguís los objetivos de Factory
+y decidís sin ir a la PC. Se actualiza sola desde la PC emparejada.
+
+<p align="center">
+  <img src="assets/app-principal.png" width="300" alt="Situación en la app: aviso de poco disco, Bandeja vacía, dos frentes trabajando y cinco CLI vivas, cuotas de Claude y Codex con su hora de renovación, RAM y CPU, un objetivo inventado de riego de una huerta con su pie de release y acciones, y la franja «Ahora» abajo">
+  <img src="assets/app-acciones.png" width="300" alt="Hoja de acciones de un objetivo inventado: release con interruptor en Publicación y cerrar objetivo con confirmación en Objetivo">
+</p>
+
+- **Situación.** Arriba aparece un aviso sólo si falta disco o memoria; al tocarlo se abre la limpieza de temporales,
+  con vista previa y confirmación. Las tarjetas muestran la Bandeja, los frentes trabajando y las CLI vivas, las
+  cuotas de Claude y Codex (alternan entre la ventana de 5 h y la semanal, cada una con su hora de renovación), la
+  RAM y la CPU. Cada objetivo despliega sus olas al tocarlo y abajo muestra el estado del release y sus acciones.
+- **Acciones de Factory por objetivo.** Responder decisiones, prender o apagar el release, aprobar el push de un
+  commit verificado (sólo si el objetivo lo permite) y cerrar un objetivo listo para revisar. Cada acción va firmada
+  por el teléfono emparejado y queda registrada.
+- **«Ahora».** Una franja fija abajo resume en dos líneas qué objetivos y frentes están en marcha.
+- **Bandeja y chat.** La Bandeja permite elegir quién responde las decisiones. En el chat con la supervisora podés
+  dictar, responder con cita y adjuntar fotos o videos. Mantené apretado un objetivo para iniciar una consulta con
+  su referencia. El botón de arriba refresca la hoja que estás mirando.
+
+Las capturas usan datos inventados.
 
 Este repositorio contiene documentación y recursos visuales. Descargarlo no instala Lienzo. Para consultar por acceso a la aplicación o una demostración, contactá a [Ariel Levy](https://github.com/arielelevy).
 
