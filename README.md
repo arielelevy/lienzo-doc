@@ -213,6 +213,13 @@ Aprendizaje y el contrato de memoria.
 
 ## Documentación pública
 
+### App Android
+
+La app Android, en desarrollo, se empareja por QR. En Situación podés desplegar los objetivos y sus etapas y
+consultar las cuotas de los agentes. La Bandeja permite elegir quién responde las decisiones. En el chat podés
+dictar, responder con cita y adjuntar fotos o videos. Mantené apretado un objetivo para iniciar una consulta
+con su referencia.
+
 Este repositorio contiene documentación y recursos visuales. Descargarlo no instala Lienzo. Para consultar por acceso a la aplicación o una demostración, contactá a [Ariel Levy](https://github.com/arielelevy).
 
 - [Copiar archivos entre PCs](docs/copias-entre-pcs.md)
